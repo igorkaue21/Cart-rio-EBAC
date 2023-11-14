@@ -117,7 +117,8 @@ int registro()
 		printf ("Escolha a Opção Desejada do Menu:\n\n");
 		printf ("\t1 - Registrar Nomes\n");
 		printf ("\t2 - Consultar Nomes\n");
-		printf ("\t3 - Deletar Nomes\n\n");
+		printf ("\t3 - Deletar Nomes\n");
+		printf ("\t4 - Sair Do Sistema\n\n");
 		printf ("Escolha uma Opcão: ");
 
 		scanf("%d", &opcao);
@@ -136,6 +137,11 @@ int registro()
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf ("Obrigado por Utilizar nosso Sistema!\n");
+			return 0;
 			break;
 			
 			default:
